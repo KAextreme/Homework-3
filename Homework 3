@@ -1,0 +1,86 @@
+import numpy as np
+import statistics
+
+def score(name):
+    
+    marks = {'Andy': 88, 'Amy': 66, 'James': 90, 'Jules': 55, 'Arthur': 77}
+    
+    for key, value in marks.items():
+        if key == name:
+            return value
+    return "Cannot find this student's name"
+
+if __name__ == "__main__":
+    
+    name = 'Andy'
+    print(score(name))
+    name = 'sam'
+    print(score(name))
+
+def score(name):
+    for key, value in marks.items():
+        if key == name:
+            return value
+    return "Cannot find this student's name"
+
+if __name__ == "__main__":
+    marks = {'Andy': 88, 'Amy': 66, 'James': 90, 'Jules': 55, 'Arthur': 77}
+    name = 'James'
+    print(score(name))
+    name = 'sam'
+    print(score(name))
+    
+def square():
+    num = 8 
+    n = 0
+    
+    while (n < num):
+        print(n)
+        print(n * n)
+        n = n + 1
+    else: 
+        print('Greater than num')
+
+def summation():
+    num = 8
+    n = 0 
+    while (n <= num):
+        print(n + n)
+        n += 1
+        
+def sumtwo():
+    num = 8
+    n = 0
+    for n in range(num):
+        print(n + n)
+        n += 1
+        
+square()
+summation()
+sumtwo()
+
+def statistic():
+    my_list = list(range(100))
+    print(sum(my_list))
+    print(sum(my_list) / len(my_list))
+    std = np.std(my_list)
+    print(std)
+    
+statistic()
+
+def minimal (v1,v2,v3,v4):
+    if v1 < v2 and v1 < v3 and v1 < v4:
+        print(v1)
+    elif v2 < v1 and v2 < v3 and v2 < v4:
+        print(v2)
+    elif v3 < v1 and v3 < v2 and v3 < v4:
+        print(v3)
+    else:
+        print(v4)
+
+minimal(10,19,4,6)
+
+def concatenation (str1,str2,str3):
+    print('Your first string is: ' + str1 + 'Your Second string is: ' + str2 + 'Your third string is: ' + str3)
+
+concatenation('David ','Josh ', 'Malcolm ')
